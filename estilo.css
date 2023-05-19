@@ -1,0 +1,71 @@
+body{
+	background-image:linear-gradient(to right,blue,yellow);
+}
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+  	border: 6px solid rgb(218, 218, 238);
+	border-radius: 3%;
+	background-color: rgba(25, 81, 235, 0.233);
+}
+
+.titulo-participantes {
+  padding: 5px;
+	font-size: 20px;
+	margin: 0px;
+}
+
+button {
+	padding: 10px;
+	font-size: 20px;
+	margin: 10px;
+	cursor: pointer;
+  	background-color: aquamarine;
+  	border-radius: 5%;
+}
+button:hover {
+  transform: scale(1.1);
+  background-color: aqua;
+  box-shadow: 2px 2px 3px gray;
+}
+
+.lado-container {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	border: 1px solid rgba(173, 216, 230, 0);
+	background-color: rgba(255, 255, 255, 0.781);
+	border-radius:100%;
+}
+/*configurando div1 */
+#lado1C{
+    margin-top:20px;
+}
+.computador, .jogador {
+	width: 100px;
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0);
+	/*border: 2px solid #FFC800;*/
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#pontuacao-jogador, #pontuacao-computador, #resultado {
+	font-size: 30px;
+	margin-top: 50px;
+}
+
+#pontuacao-jogador::after, #pontuacao-computador::after , #resultado::after {
+	display: block;
+	width: 50px;
+	height: 2px;
+	margin: 10px auto;
+	background-color: black;
+ 	transform: rotate(10,10);
+  
+}

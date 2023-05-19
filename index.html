@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JokemPo</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Jokem</h1>
+		<h3 class="titulo-participantes">Computador:</h3>
+
+		<div class="lado-container"> 
+			<div class="computador">
+				<img id="ladoC" width="100px" height="100px">
+			</div>
+		</div>
+
+		<h3 class="titulo-participantes">Jogador:</h3>
+		 
+			<div class="lado-container">
+				<div class="jogador">
+					<img id="ladoJ" width="100px" height="100px">
+				</div>
+		</div>
+
+		<p id="pontuacao-computador"></p>
+		<p id="pontuacao-jogador"></p>
+    	<p id="resultado"></p>
+    	<button id="btn-sortear-lados" onclick="sortearlados()">JokemPo</button>
+		<button id="resetar" onclick="resetar()">reiniciar</button>
+	</div>
+	<script src="js.js"></script>
+</body>
+</html>
